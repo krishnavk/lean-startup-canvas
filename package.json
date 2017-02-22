@@ -6,6 +6,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron main.js"
+	"build": "electron-packager . --prune --platform=win32 --arch=x64 --out=./dist"
   },
   "babel": {
     "presets": [
@@ -26,6 +27,7 @@
     "jquery": "^2.2.3"
   },
   "devDependencies": {
+    "electron-packager": "^8.5.2",
     "electron-rebuild": "^1.4.0"
   }
 }
